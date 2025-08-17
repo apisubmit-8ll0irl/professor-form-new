@@ -55,6 +55,5 @@ export default async function handler(req, res) {
     console.error("Email send error:", error);
   }
 
-  // Always redirect (success or failure)
-  return res.redirect(302, "https://thanks-rediricted-two.vercel.app/");
+  
 }
